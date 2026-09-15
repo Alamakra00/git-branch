@@ -1,0 +1,16 @@
+  366  cd git-branch.git
+  367  cd git-branch
+  368  git checkout -b feature
+  369  echo "# Мой проект" > README.md
+  370  echo "*.log" >> .gitignore\n
+  371  git add README.md .gitignore\n
+  372  git commit -m "Add README and update gitignore"
+  373  git push -u origin feature
+  374  git commit --amend -m "Add README and update gitignore (ammend)"
+  375  git push --force origin feature
+  376  git checkout main
+  377  git checkout main
+  378  git branch -a
+  379  git checkout -b main
+  380  git push -u origin main
+  381  git merge feature
